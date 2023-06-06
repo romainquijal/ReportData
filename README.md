@@ -9,4 +9,6 @@ Parameters are accessible through the Lightning App Builder, allowing each LWC t
 
 Please note that this application can handle a maximum of 2000 records.
 
+Joined reports are not supported.
+
 If you have any ideas or suggestions for additional features, please don't hesitate to reach out to me!
