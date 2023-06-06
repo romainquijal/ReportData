@@ -1,0 +1,35 @@
+<!--
+  @description       : 
+  @author            : Romain QUIJAL
+  @group             : 
+  @last modified on  : 03-26-2023
+  @last modified by  : Romain QUIJAL
+-->
+<template>
+    <lightning-button variant="brand" label="Refresh" title="Refresh" onclick={handleClick} ></lightning-button>
+
+    <div style={componentStyle} class="slds-scrollable">
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+    </template>
+    
+    <template if:true={showData}>
+        <template if:false={showError}>
+                <lightning-datatable
+                key-field="id"
+                data={reportData.customValues}
+                columns={reportData.customColumns}
+                hide-checkbox-column="true"
+                sorted-by={sortedBy}
+                sorted-direction={sortDirection}
+                onsort={onHandleSort}
+                >
+        </lightning-datatable>
+
+        </template>
+        <template if:true={showError}>
+             <p>{error}</p>
+        </template>
+    </template>
+    </div>
+</template>
