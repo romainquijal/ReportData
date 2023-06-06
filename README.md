@@ -1,18 +1,12 @@
-# Salesforce DX Project: Next Steps
+This project was built to showcase a use case: displaying a report inside a Lightning page and dynamically filtering it with the current record and some parameters.
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Here is an example of the LWC in action:
+![image](https://github.com/romainquijal/ReportData/assets/10703287/c3b22504-dda5-4e2e-9906-bcc06d986b4e)
 
-## How Do You Plan to Deploy Your Changes?
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Parameters are accessible through the Lightning App Builder, allowing each LWC to operate autonomously.
+![image](https://github.com/romainquijal/ReportData/assets/10703287/519010f0-4da9-4662-8c14-9df493c1e755)
 
-## Configure Your Salesforce DX Project
+Please note that this application can handle a maximum of 2000 records.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+If you have any ideas or suggestions for additional features, please don't hesitate to reach out to me!
